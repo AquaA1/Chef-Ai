@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Environment secrets — NEVER commit this
+.env
+
+# Legacy flat-file database (no longer used)
+users.json
+
+# OS files
+.DS_Store
+Thumbs.db

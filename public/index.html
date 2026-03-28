@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mise en Place — AI Recipe Generator</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ─── LOGIN SCREEN ─── -->
+<div id="login-screen" class="screen active">
+  <div class="login-bg">
+    <div class="grain"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+  </div>
+  <div class="login-card">
+    <div class="login-logo">
+      <span class="logo-icon">⚑</span>
+      <h1>Mise en Place</h1>
+      <p class="login-tagline">AI recipes from what you already have</p>
+    </div>
+    <div class="login-form">
+      <label for="password-input">Choose or enter your password</label>
+      <div class="input-row">
+        <input type="password" id="password-input" placeholder="min. 4 characters" maxlength="40" autocomplete="off"/>
+        <button id="login-btn" class="btn-primary">Go</button>
+      </div>
+      <p id="login-error" class="error-msg hidden"></p>
+      <p class="login-hint">New password → creates your account &nbsp;·&nbsp; Existing password → signs you in</p>
+    </div>
+  </div>
+</div>
+
+<!-- ─── APP SCREEN ─── -->
+<div id="app-screen" class="screen">
+  <div class="app-bg"><div class="grain"></div></div>
+
+  <!-- SIDEBAR -->
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-logo"><span>⚑</span> Mise en Place</div>
+      <button id="sidebar-close" class="icon-btn" title="Close sidebar">✕</button>
+    </div>
+
+    <div class="sidebar-user">
+      <div class="user-avatar" id="sidebar-avatar"></div>
+      <div>
+        <div class="sidebar-userid" id="sidebar-userid"></div>
+        <button id="logout-btn" class="logout-link">Sign out</button>
+      </div>
+    </div>
+
+    <div class="sidebar-section-title">
+      Search History
+      <button id="clear-history-btn" class="clear-btn" title="Clear all history">Clear all</button>
+    </div>
+
+    <!-- sidebar tabs -->
+    <div class="sidebar-tabs">
+      <button class="stab active" data-tab="history">History</button>
+      <button class="stab" data-tab="pantry">My Pantry</button>
+    </div>
+
+    <div id="history-list" class="history-list sidebar-panel active-panel">
+      <div class="history-empty">No searches yet.<br>Generate your first recipe!</div>
+    </div>
+
+    <div id="pantry-panel" class="sidebar-panel pantry-panel">
+      <p class="pantry-intro">Save your staple ingredients here. They'll be pre-filled when you search.</p>
+      <div id="pantry-tags" class="pantry-tags"></div>
+      <div class="pantry-add-row">
+        <input id="pantry-add-input" class="pantry-add-input" placeholder="Add ingredient…" maxlength="40"/>
+        <button id="pantry-add-btn" class="btn-primary btn-sm">+</button>
+      </div>
+      <button id="pantry-fill-btn" class="pantry-fill-btn">📋 Fill from pantry</button>
+    </div>
+  </aside>
+
+  <!-- OVERLAY -->
+  <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+  <!-- MAIN CONTENT -->
+  <div class="app-main" id="app-main">
+    <header>
+      <button id="sidebar-toggle" class="icon-btn hamburger" title="Open history">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="header-logo"><span>⚑</span> Mise en Place</div>
+      <div id="user-badge" class="user-badge"></div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h2>What's in your kitchen?</h2>
+        <p class="hero-sub">Tell us your ingredients — we'll cook up the ideas.</p>
+      </section>
+
+      <section class="input-section">
+        <div class="textarea-wrap">
+          <textarea id="ingredients-input" placeholder="e.g. tomato, cheese, eggs, garlic, spinach…" rows="3"></textarea>
+          <div id="tag-cloud" class="tag-cloud"></div>
+        </div>
+        <div class="action-row">
+          <button id="quick-match-btn" class="btn-ghost btn-quick" title="Fill from your last pantry search">🥄 Quick Match</button>
+          <button id="generate-btn" class="btn-primary btn-large">
+            <span class="btn-text">Generate Recipes</span>
+            <span class="btn-icon">→</span>
+          </button>
+        </div>
+      </section>
+
+      <div id="loading" class="loading hidden">
+        <div class="loading-inner">
+          <div class="skillet">🍳</div>
+          <p>Thinking up your recipes…</p>
+          <div class="dots"><span></span><span></span><span></span></div>
+        </div>
+      </div>
+
+      <section id="results" class="results hidden">
+        <div class="results-header">
+          <h3 id="results-title">Here's what you can make</h3>
+          <button id="retry-btn" class="btn-ghost">↺ Try Again</button>
+        </div>
+        <div class="filter-bar">
+          <div class="filter-group">
+            <label class="filter-label">Sort by</label>
+            <div class="filter-pills" id="sort-pills">
+              <button class="pill active" data-sort="score">Best Match</button>
+              <button class="pill" data-sort="time">Quickest</button>
+              <button class="pill" data-sort="difficulty">Easiest</button>
+            </div>
+          </div>
+          <div class="filter-group">
+            <label class="filter-label">Difficulty</label>
+            <div class="filter-pills" id="diff-pills">
+              <button class="pill active" data-diff="all">All</button>
+              <button class="pill" data-diff="easy">Easy</button>
+              <button class="pill" data-diff="medium">Medium</button>
+              <button class="pill" data-diff="hard">Hard</button>
+            </div>
+          </div>
+        </div>
+        <div id="results-stats" class="results-stats"></div>
+        <div id="recipe-grid" class="recipe-grid"></div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<!-- RECIPE DETAIL MODAL -->
+<div id="recipe-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <button id="modal-close" class="modal-close" title="Close">✕</button>
+    <div id="modal-body" class="modal-body"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

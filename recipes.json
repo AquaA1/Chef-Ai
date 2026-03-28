@@ -1,0 +1,282 @@
+[
+  {
+    "name": "Classic Tomato Pasta",
+    "emoji": "🍝",
+    "ingredients": ["tomato", "garlic", "pasta", "olive oil", "basil"],
+    "steps": ["Boil pasta until al dente.", "Sauté garlic in olive oil for 1 min.", "Add chopped tomatoes, cook 10 min.", "Toss pasta in sauce.", "Top with fresh basil and serve."],
+    "time": "20 mins",
+    "difficulty": "easy"
+  },
+  {
+    "name": "Garlic Butter Shrimp",
+    "emoji": "🍤",
+    "ingredients": ["shrimp", "garlic", "butter", "lemon", "parsley"],
+    "steps": ["Melt butter in a pan over medium heat.", "Add minced garlic and sauté 1 min.", "Add shrimp, cook 2 min per side.", "Squeeze lemon juice and toss.", "Garnish with parsley and serve."],
+    "time": "15 mins",
+    "difficulty": "easy"
+  },
+  {
+    "name": "Veggie Fried Rice",
+    "emoji": "🍚",
+    "ingredients": ["rice", "egg", "carrot", "onion", "soy sauce", "garlic"],
+    "steps": ["Cook rice and let it cool.", "Scramble eggs in a wok, set aside.", "Stir-fry carrot and onion 3 min.", "Add garlic, then rice, then eggs.", "Season with soy sauce and serve hot."],
+    "time": "25 mins",
+    "difficulty": "easy"
+  },
+  {
+    "name": "Avocado Toast",
+    "emoji": "🥑",
+    "ingredients": ["avocado", "bread", "lemon", "salt", "pepper"],
+    "steps": ["Toast bread slices to your liking.", "Mash avocado with lemon juice.", "Season with salt and pepper.", "Spread avocado on toast.", "Serve immediately."],
+    "time": "5 mins",
+    "difficulty": "easy"
+  },
+  {
+    "name": "Spinach Omelette",
+    "emoji": "🥚",
+    "ingredients": ["egg", "spinach", "cheese", "butter", "salt"],
+    "steps": ["Beat eggs with salt in a bowl.", "Melt butter in a non-stick pan.", "Pour eggs and swirl to coat.", "Add spinach and cheese on one half.", "Fold and cook 1 more minute."],
+    "time": "10 mins",
+    "difficulty": "easy"
+  },
+  {
+    "name": "Potato Soup",
+    "emoji": "🥔",
+    "ingredients": ["potato", "onion", "garlic", "butter", "milk", "salt"],
+    "steps": ["Dice potatoes and onion.", "Sauté onion and garlic in butter.", "Add potatoes and cover with water.", "Simmer 15 min until tender.", "Blend smooth with milk, season and serve."],
+    "time": "30 mins",
+    "difficulty": "medium"
+  },
+  {
+    "name": "Chicken Stir-Fry",
+    "emoji": "🍗",
+    "ingredients": ["chicken", "broccoli", "soy sauce", "garlic", "ginger", "oil"],
+    "steps": ["Slice chicken into thin strips.", "Heat oil in a wok on high heat.", "Stir-fry chicken 4 min until cooked.", "Add broccoli, garlic, ginger and stir.", "Pour soy sauce, toss and serve with rice."],
+    "time": "20 mins",
+    "difficulty": "medium"
+  },
+  {
+    "name": "Mushroom Risotto",
+    "emoji": "🍄",
+    "ingredients": ["rice", "mushroom", "onion", "butter", "garlic", "parmesan"],
+    "steps": ["Sauté onion and garlic in butter.", "Add rice and toast 2 min.", "Add mushrooms and stir.", "Gradually add hot water, stirring constantly.", "Finish with parmesan and serve."],
+    "time": "35 mins",
+    "difficulty": "hard"
+  },
+  {
+    "name": "Banana Pancakes",
+    "emoji": "🍌",
+    "ingredients": ["banana", "egg", "flour", "milk", "butter"],
+    "steps": ["Mash banana in a bowl.", "Add eggs, flour, and milk and mix.", "Heat butter in a pan on medium.", "Pour small rounds of batter.", "Cook 2 min per side until golden."],
+    "time": "15 mins",
+    "difficulty": "easy"
+  },
+  {
+    "name": "Tomato Egg Scramble",
+    "emoji": "🍳",
+    "ingredients": ["tomato", "egg", "onion", "salt", "oil"],
+    "steps": ["Dice tomato and onion.", "Beat eggs with a pinch of salt.", "Stir-fry onion in oil 2 min.", "Add tomato and cook 3 min.", "Pour in eggs, scramble until cooked."],
+    "time": "10 mins",
+    "difficulty": "easy"
+  },
+  {
+    "name": "Garlic Roasted Potatoes",
+    "emoji": "🥔",
+    "ingredients": ["potato", "garlic", "olive oil", "salt", "pepper", "rosemary"],
+    "steps": ["Preheat oven to 220°C.", "Cut potatoes into wedges.", "Toss with garlic, oil, salt, pepper, rosemary.", "Spread on baking tray.", "Roast 30–35 min until golden."],
+    "time": "40 mins",
+    "difficulty": "easy"
+  },
+  {
+    "name": "Caprese Salad",
+    "emoji": "🍅",
+    "ingredients": ["tomato", "mozzarella", "basil", "olive oil", "salt"],
+    "steps": ["Slice tomatoes and mozzarella evenly.", "Alternate slices on a plate.", "Tuck basil leaves between each slice.", "Drizzle with olive oil.", "Season with salt and serve."],
+    "time": "5 mins",
+    "difficulty": "easy"
+  },
+  {
+    "name": "Lemon Herb Chicken",
+    "emoji": "🍋",
+    "ingredients": ["chicken", "lemon", "garlic", "olive oil", "rosemary", "salt"],
+    "steps": ["Marinate chicken with lemon, garlic, olive oil, rosemary.", "Rest 15 min.", "Heat pan on medium-high.", "Cook chicken 6–7 min per side.", "Rest 5 min before slicing."],
+    "time": "35 mins",
+    "difficulty": "medium"
+  },
+  {
+    "name": "French Toast",
+    "emoji": "🍞",
+    "ingredients": ["bread", "egg", "milk", "butter", "sugar", "cinnamon"],
+    "steps": ["Whisk eggs, milk, sugar, and cinnamon.", "Dip bread slices in the mixture.", "Heat butter in a pan on medium.", "Cook bread 2–3 min per side until golden.", "Serve with syrup or fruit."],
+    "time": "15 mins",
+    "difficulty": "easy"
+  },
+  {
+    "name": "Beef Tacos",
+    "emoji": "🌮",
+    "ingredients": ["beef", "taco shell", "tomato", "cheese", "onion", "lime"],
+    "steps": ["Brown ground beef in a pan.", "Season with salt, pepper, cumin.", "Warm taco shells in oven 3 min.", "Fill with beef, tomato, cheese, onion.", "Squeeze lime on top and serve."],
+    "time": "20 mins",
+    "difficulty": "easy"
+  },
+  {
+    "name": "Minestrone Soup",
+    "emoji": "🍲",
+    "ingredients": ["carrot", "celery", "tomato", "pasta", "onion", "garlic", "bean"],
+    "steps": ["Dice all vegetables.", "Sauté onion, garlic, carrot, celery in oil.", "Add tomatoes and beans, stir.", "Pour in 4 cups water or broth.", "Add pasta and cook 10 min. Season and serve."],
+    "time": "35 mins",
+    "difficulty": "medium"
+  },
+  {
+    "name": "Pesto Pasta",
+    "emoji": "🌿",
+    "ingredients": ["pasta", "basil", "garlic", "parmesan", "pine nuts", "olive oil"],
+    "steps": ["Blend basil, garlic, parmesan, pine nuts, olive oil into pesto.", "Boil pasta until al dente.", "Drain pasta, reserve a little water.", "Toss pasta with pesto.", "Add pasta water if too thick. Serve."],
+    "time": "20 mins",
+    "difficulty": "easy"
+  },
+  {
+    "name": "Cheese Quesadilla",
+    "emoji": "🧀",
+    "ingredients": ["tortilla", "cheese", "butter", "onion", "pepper"],
+    "steps": ["Dice onion and pepper.", "Sauté onion and pepper in butter 3 min.", "Lay tortilla flat in a pan on medium heat.", "Add cheese and sautéed veg on one half.", "Fold and cook 2 min per side until golden."],
+    "time": "15 mins",
+    "difficulty": "easy"
+  },
+  {
+    "name": "Lentil Dhal",
+    "emoji": "🫘",
+    "ingredients": ["lentil", "tomato", "onion", "garlic", "ginger", "cumin", "turmeric"],
+    "steps": ["Rinse lentils thoroughly.", "Sauté onion, garlic, ginger in oil.", "Add tomato and spices, cook 3 min.", "Add lentils and 3 cups water.", "Simmer 20 min until soft. Season and serve."],
+    "time": "30 mins",
+    "difficulty": "easy"
+  },
+  {
+    "name": "Greek Salad",
+    "emoji": "🥗",
+    "ingredients": ["tomato", "cucumber", "feta", "olive", "onion", "olive oil"],
+    "steps": ["Chop tomato, cucumber, and onion.", "Combine in a large bowl.", "Add olives and crumbled feta.", "Drizzle with olive oil.", "Toss gently and serve."],
+    "time": "10 mins",
+    "difficulty": "easy"
+  },
+  {
+    "name": "Spaghetti Carbonara",
+    "emoji": "🍝",
+    "ingredients": ["pasta", "egg", "bacon", "parmesan", "garlic", "pepper"],
+    "steps": ["Boil pasta until al dente.", "Fry bacon and garlic until crispy.", "Mix eggs and parmesan in a bowl.", "Remove pan from heat, add pasta.", "Stir in egg mixture quickly. Season with pepper."],
+    "time": "20 mins",
+    "difficulty": "medium"
+  },
+  {
+    "name": "Mango Smoothie",
+    "emoji": "🥭",
+    "ingredients": ["mango", "banana", "milk", "honey", "ice"],
+    "steps": ["Peel and chop mango and banana.", "Add to blender with milk and honey.", "Add ice cubes.", "Blend until smooth.", "Pour into glasses and serve cold."],
+    "time": "5 mins",
+    "difficulty": "easy"
+  },
+  {
+    "name": "Salmon with Lemon",
+    "emoji": "🐟",
+    "ingredients": ["salmon", "lemon", "garlic", "butter", "dill", "salt"],
+    "steps": ["Season salmon with salt and pepper.", "Melt butter in a pan on medium-high.", "Cook salmon 4 min per side.", "Add garlic and lemon juice, baste.", "Garnish with dill and serve."],
+    "time": "15 mins",
+    "difficulty": "easy"
+  },
+  {
+    "name": "Corn Fritters",
+    "emoji": "🌽",
+    "ingredients": ["corn", "egg", "flour", "onion", "salt", "oil"],
+    "steps": ["Mix corn, egg, flour, onion, salt into a batter.", "Heat oil in a frying pan.", "Drop spoonfuls of batter and flatten.", "Fry 2–3 min per side until golden.", "Drain on paper towel and serve."],
+    "time": "20 mins",
+    "difficulty": "easy"
+  },
+  {
+    "name": "Broccoli Cheddar Soup",
+    "emoji": "🥦",
+    "ingredients": ["broccoli", "cheddar", "onion", "garlic", "butter", "milk"],
+    "steps": ["Sauté onion and garlic in butter.", "Add chopped broccoli and cover with water.", "Simmer 10 min until tender.", "Blend until smooth.", "Stir in cheddar and milk, season and serve."],
+    "time": "25 mins",
+    "difficulty": "easy"
+  },
+  {
+    "name": "Shakshuka",
+    "emoji": "🍳",
+    "ingredients": ["egg", "tomato", "onion", "garlic", "cumin", "paprika", "olive oil"],
+    "steps": ["Sauté onion and garlic in olive oil.", "Add tomatoes, cumin, paprika. Cook 8 min.", "Make wells in sauce and crack in eggs.", "Cover and cook until whites are set.", "Serve with bread."],
+    "time": "25 mins",
+    "difficulty": "easy"
+  },
+  {
+    "name": "Tofu Stir-Fry",
+    "emoji": "🍱",
+    "ingredients": ["tofu", "soy sauce", "garlic", "ginger", "broccoli", "oil"],
+    "steps": ["Press and cube tofu.", "Fry tofu in oil until golden, set aside.", "Stir-fry garlic and ginger 1 min.", "Add broccoli and cook 3 min.", "Return tofu, add soy sauce, toss and serve."],
+    "time": "20 mins",
+    "difficulty": "easy"
+  },
+  {
+    "name": "Apple Cinnamon Oatmeal",
+    "emoji": "🍎",
+    "ingredients": ["oat", "apple", "cinnamon", "milk", "honey"],
+    "steps": ["Peel and dice apple.", "Combine oats and milk in a pot.", "Cook on medium, stirring, 5 min.", "Stir in apple and cinnamon.", "Drizzle with honey and serve."],
+    "time": "10 mins",
+    "difficulty": "easy"
+  },
+  {
+    "name": "Chicken Caesar Salad",
+    "emoji": "🥗",
+    "ingredients": ["chicken", "lettuce", "parmesan", "crouton", "lemon", "garlic"],
+    "steps": ["Grill or pan-cook chicken, slice thinly.", "Tear lettuce into a large bowl.", "Add croutons and parmesan.", "Toss with lemon juice and garlic.", "Top with chicken and serve."],
+    "time": "20 mins",
+    "difficulty": "easy"
+  },
+  {
+    "name": "Coconut Curry",
+    "emoji": "🥥",
+    "ingredients": ["coconut milk", "chicken", "onion", "garlic", "ginger", "curry powder", "tomato"],
+    "steps": ["Sauté onion, garlic, ginger in oil.", "Add chicken and brown 5 min.", "Stir in curry powder and tomato.", "Pour in coconut milk and simmer 15 min.", "Adjust seasoning and serve with rice."],
+    "time": "30 mins",
+    "difficulty": "medium"
+  },
+  {
+    "name": "Bean and Cheese Burrito",
+    "emoji": "🌯",
+    "ingredients": ["tortilla", "bean", "cheese", "onion", "tomato", "lime"],
+    "steps": ["Warm beans in a pan with salt.", "Warm tortilla in a dry pan 30 sec.", "Layer beans, cheese, onion, tomato.", "Squeeze lime juice.", "Roll tightly and serve."],
+    "time": "10 mins",
+    "difficulty": "easy"
+  },
+  {
+    "name": "Leek and Potato Gratin",
+    "emoji": "🧅",
+    "ingredients": ["potato", "leek", "cream", "cheese", "garlic", "butter"],
+    "steps": ["Preheat oven to 180°C.", "Slice potato and leek thinly.", "Layer in buttered baking dish with garlic.", "Pour cream over and top with cheese.", "Bake 40 min until golden and tender."],
+    "time": "55 mins",
+    "difficulty": "medium"
+  },
+  {
+    "name": "Prawn Fried Noodles",
+    "emoji": "🍜",
+    "ingredients": ["noodle", "shrimp", "egg", "soy sauce", "garlic", "spring onion"],
+    "steps": ["Cook noodles, drain and set aside.", "Stir-fry garlic in oil 1 min.", "Add shrimp and cook 2 min.", "Push aside, scramble egg.", "Add noodles, soy sauce, spring onion, toss and serve."],
+    "time": "20 mins",
+    "difficulty": "medium"
+  },
+  {
+    "name": "Stuffed Bell Peppers",
+    "emoji": "🫑",
+    "ingredients": ["pepper", "rice", "beef", "tomato", "onion", "cheese"],
+    "steps": ["Preheat oven to 190°C.", "Cut tops off peppers, remove seeds.", "Cook rice and mix with browned beef, tomato, onion.", "Fill peppers with the mixture.", "Top with cheese and bake 25 min."],
+    "time": "45 mins",
+    "difficulty": "medium"
+  },
+  {
+    "name": "Egg Fried Rice",
+    "emoji": "🍳",
+    "ingredients": ["rice", "egg", "soy sauce", "spring onion", "oil", "garlic"],
+    "steps": ["Day-old cold rice works best.", "Heat oil in a wok on high heat.", "Add garlic, then push aside and scramble eggs.", "Add rice and break up clumps.", "Add soy sauce and spring onion, toss and serve."],
+    "time": "15 mins",
+    "difficulty": "easy"
+  }
+]
