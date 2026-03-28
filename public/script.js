@@ -41,6 +41,8 @@ function formatTime(iso) {
          d.toLocaleTimeString(undefined,{hour:"2-digit",minute:"2-digit"});
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+
 /* ─── DOM REFS ─── */
 const loginScreen      = document.getElementById("login-screen");
 const appScreen        = document.getElementById("app-screen");
@@ -65,6 +67,9 @@ const resultsEl        = document.getElementById("results");
 const resultsTitle     = document.getElementById("results-title");
 const recipeGrid       = document.getElementById("recipe-grid");
 const retryBtn         = document.getElementById("retry-btn");
+const modal            = document.getElementById("recipe-modal");
+const modalClose       = document.getElementById("modal-close");
+const modalBody        = document.getElementById("modal-body");
 
 /* ─── LOGIN ─── */
 loginBtn.addEventListener("click", handleAuth);
@@ -604,9 +609,7 @@ function initSidebarTabs() {
 /* ════════════════════════════════════════════════
    RECIPE DETAIL MODAL
 ════════════════════════════════════════════════ */
-const modal      = document.getElementById("recipe-modal");
-const modalClose = document.getElementById("modal-close");
-const modalBody  = document.getElementById("modal-body");
+// modal refs declared above in DOM REFS section
 
 function openModal(recipe, userIngredients) {
   const score = recipe.score != null ? recipe.score : null;
@@ -697,3 +700,6 @@ document.addEventListener("keydown", e => { if (e.key === "Escape") closeModal()
   initSidebarTabs();
   // pantry panel inits after app shown — see showApp patch below
 })();
+
+
+}); // end DOMContentLoaded
