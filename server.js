@@ -1,5 +1,8 @@
 require("dotenv").config();
 
+const { GoogleGenerativeAI } = require("@google/generative-ai");
+const genAI = new GoogleGenerativeAI(process.env.API_KEY);
+
 const express  = require("express");
 const path     = require("path");
 const fs       = require("fs");
@@ -218,10 +221,49 @@ function matchRecipes(userIngredients) {
   return scored.slice(0, 3);
 }
 
+// async function generateRecipes(ingredients) {
+//   const recipes = matchRecipes(parseIngredients(ingredients));
+//   if (!recipes.length) return { recipes: [], noMatch: true };
+//   return { recipes };
+// }
+
 async function generateRecipes(ingredients) {
-  const recipes = matchRecipes(parseIngredients(ingredients));
-  if (!recipes.length) return { recipes: [], noMatch: true };
-  return { recipes };
+  const model = genAI.getGenerativeModel({ 
+    model: "gemini-1.5-flash",
+    generationConfig: { responseMimeType: "application/json" }
+  });
+
+  const prompt = `
+    You are a professional chef. Based on these ingredients: ${ingredients}, 
+    generate 3 creative recipes. 
+    Return the data strictly as a JSON object with a key "recipes" which is an array of objects.
+    Each object must have:
+    - name (string)
+    - emoji (string)
+    - ingredients (array of strings)
+    - steps (array of strings)
+    - time (string)
+    - difficulty (string)
+    - score (number, 1-100 based on ingredient match)
+    - missing (array of strings)
+  `;
+
+  try {
+    const result = await model.generateContent(prompt);
+    const response = await result.response;
+    const data = JSON.parse(response.text());
+    
+    // Add YouTube links to the AI results automatically
+    data.recipes = data.recipes.map(r => ({
+      ...r,
+      youtube: `https://www.youtube.com/results?search_query=${encodeURIComponent(r.name + " recipe")}`
+    }));
+
+    return data;
+  } catch (error) {
+    console.error("Gemini Error:", error);
+    return { recipes: [], noMatch: true };
+  }
 }
 
 // ─── Start ────────────────────────────────────────────────────────────────────
